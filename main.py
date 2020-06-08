@@ -2,7 +2,6 @@ import requests
 import lxml
 from lxml import html
 
-from pushover import init, Client
 
 
 def job():
@@ -24,10 +23,11 @@ def job():
 
     print(message)
 
-    token = 'aqea1ttcxmcty1pkmgpviwbah54tv8'
-    key = 'unvkmu5bskjfyko57qwg2e7txq87vy'
-    client = Client(key, api_token=token)
-    client.send_message(message)
+    # from pushover import init, Client   
+    # token = 'aqea1ttcxmcty1pkmgpviwbah54tv8'
+    # key = 'unvkmu5bskjfyko57qwg2e7txq87vy'
+    # client = Client(key, api_token=token)
+    # client.send_message(message)
 
 job()
 
